@@ -2,6 +2,16 @@ export const ADD_ONE = "ADD_ONE";
 export const CLEAR_DISPLAY = "CLEAR_DISPLAY";
 export const APPLY_NUMBER = "APPLY_NUMBER";
 export const CHANGE_OPERATION = "CHANGE_OPERATION";
+export const MEMORY_ADD = "MEMORY_ADD";
+export const MEMORY_APPLY ='MEMORY_APPLY';
+
+export const memoryApply = () => {
+    return { type: MEMORY_APPLY };
+};
+
+export const memoryAdd = () => {
+  return { type: MEMORY_ADD };
+};
 
 export const addOne = () => {
   return { type: ADD_ONE };
