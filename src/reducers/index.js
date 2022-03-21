@@ -5,6 +5,7 @@ import {
   CLEAR_DISPLAY,
   MEMORY_ADD,
   MEMORY_APPLY,
+  MEMORY_CLEAR,
 } from "./../actions";
 
 export const initialState = {
@@ -26,6 +27,11 @@ const calculateResult = (num1, num2, operation) => {
 
 const reducer = (state, action) => {
   switch (action.type) {
+    case MEMORY_CLEAR:
+      return {
+        ...state,
+        memory: 0,
+      };
     case MEMORY_APPLY:
       return {
         ...state,
